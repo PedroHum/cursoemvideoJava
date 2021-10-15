@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com strings</title>
+    <style>
+        body {
+            background-color: rgb(73, 71, 71);
+            color: rgb(189, 183, 162);
+            font: normal 20pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual é o seu nome?")
+        //window.alert(`Olá ${nome}, o seu nome possui ${nome.length} letras!`)
+        //string.lenght quantidade de letras
+        //string.toUppercase() modifica a palavra pra maiuscula
+        //string.toLowerCase() modifica a palavra pra minuscula
+        //document.write = escrever na página, aceita tags HTML
+        document.write(`Olá <strong>${nome}</strong>, o seu nome possui ${nome.length} letras! <br/>`)
+        document.write(`Seu nome em Uppercase é assim: ${nome.toUpperCase()} <br/>`)
+        document.write(`Já em Lowercase é: ${nome.toLowerCase()}`)
+            
+     /*  NO TERMINAL NODE 
+            var n1 = 234.5
+            **aumentar o numero de casas após o ponto com toFixed()
+            n1.toFixed(2)
+            **alterar qualquer string no numero
+            n1.tofixed(2).replace ('.',',')
+            n1 = '234,50'
+            **alterar o formato da moeda para BRL
+            n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            n1 = 'R$ 234,50'
+      */  
+    </script>
+
+</body>
+</html> 

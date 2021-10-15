@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é brasileiro?</title>
+    <style>
+        body{
+            color: rgb(235, 235, 235);
+            background-color:rgb(34, 33, 33);
+            font-size: 1.3em;
+        }
+        #res{
+            color: red;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é estrangeiro?</h1>
+    <br>
+    Digite seu país de origem: <input type="text" id="pais"> <input type="button" value="Verificar" onclick="checar()">
+    <br><br>
+    <div id=res></div>
+
+    <script>
+        function checar(){
+        var resu = window.document.querySelector('div#res')
+        var nacio = window.document.querySelector('input#pais')
+        var vel = String(nacio.value).toLowerCase()
+         
+                
+        if (vel == 'brasil'){
+            resu.innerHTML = 'Você é brasileiro!'
+        }
+        else {
+            resu.innerHTML = 'Você é um estrangeiro!'
+        }
+        }
+    </script>
+</body>
+</html>
